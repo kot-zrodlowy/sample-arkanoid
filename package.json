@@ -1,0 +1,23 @@
+{
+  "name": "arkanoid",
+  "version": "0.0.0",
+  "description": "A simple arkanoid demo with phaser",
+  "main": "js/main.js",
+  "scripts": {
+    "build": "browserify ./js/main.js -o ./js/bundle.js",
+    "test": "mocha --reporter=nyan",
+    "karma": "karma start"
+  },
+  "author": "Kornelia Kobiela",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "eslint": "^3.16.1",
+    "jsdoc": "^3.4.3",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "phaser": "^2.6.2",
+    "phaser-ce": "^2.7.3"
+  }
+}

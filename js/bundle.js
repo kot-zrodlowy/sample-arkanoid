@@ -112,7 +112,8 @@ function collectBricks(ball, brick) {
     if (brick.countLiving <= 0) {
         score += 1000;
         startText.text = "- Next Level -";
-        tiles.callAll("revive");
+        startText.visible = true;
+        bricks.callAll("revive");
         ballOnPaddle = true;
     }
 }

@@ -109,7 +109,7 @@ function collectBricks(ball, brick) {
     brick.kill();
     score += 10;
     scoreText.text = 'Score: ' + score;
-    if (brick.countLiving <= 0) {
+    if (bricks.countLiving() <= 0) {
         score += 1000;
         startText.text = "- Next Level -";
         startText.visible = true;

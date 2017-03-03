@@ -115,6 +115,11 @@ function collectBricks(ball, brick) {
         startText.visible = true;
         bricks.callAll("revive");
         ballOnPaddle = true;
+        ballOnPaddle = true;
+            ball.body.velocity.set(0);
+            ball.x = paddle.x + 16;
+            ball.y = paddle.y - 16;
+
     }
 }
 
@@ -141,11 +146,11 @@ function death() {
     lives--;
     livesText.text = "lives: " + lives;
 
-    if (lives === 0) {
+    if (lives <= 0) {
         gameOver();
     } else {
         ballOnPaddle = true;
-        ball.reset(player.body.x, player.y - 16);
+        ball.reset(player.x, player.y - 16);
     }
 }
 

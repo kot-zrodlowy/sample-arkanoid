@@ -69,7 +69,7 @@ function create() {
         fontSize: '20px',
         fill: '#fff'
     });
-    startText = game.add.text(game.world.centerX, game.world.centerY, 'clickToStart', {
+    startText = game.add.text(game.world.centerX, game.world.centerY, 'click To Start', {
         fontSize: '50px',
         fill: '#fff'
     });
@@ -111,7 +111,8 @@ function collectBricks(ball, brick) {
     if (brick.countLiving <= 0) {
         score += 1000;
         startText.text = "- Next Level -";
-        tiles.callAll("revive");
+        startText.visible = true;
+        bricks.callAll("revive");
         ballOnPaddle = true;
     }
 }

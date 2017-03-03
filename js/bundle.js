@@ -70,7 +70,7 @@ function create() {
         fontSize: '20px',
         fill: '#fff'
     });
-    startText = game.add.text(game.world.centerX, game.world.centerY, 'clickToStart', {
+    startText = game.add.text(game.world.centerX, game.world.centerY, 'click To Start', {
         fontSize: '50px',
         fill: '#fff'
     });
